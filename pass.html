@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔐 Password Generator</h1>
+
+        <!-- Output -->
+        <div class="output-box">
+            <input type="text" id="password" placeholder="Your password will appear here" readonly>
+            <button id="copyBtn">Copy</button>
+        </div>
+
+        <!-- Length -->
+        <div class="setting">
+            <label for="length">
+                Password Length:
+                <span id="lengthValue">12</span>
+            </label>
+            <input type="range" id="length" min="8" max="32" value="12">
+        </div>
+
+        <!-- Options -->
+        <div class="options">
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Include Uppercase (A-Z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                Include Lowercase (a-z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Include Numbers (0-9)
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols">
+                Include Symbols (!@#$%)
+            </label>
+        </div>
+
+        <!-- Strength -->
+        <div class="strength">
+            <span>Strength:</span>
+            <span id="strengthText">Medium</span>
+        </div>
+
+        <!-- Generate -->
+        <button id="generateBtn" class="generate-btn">
+            Generate Password
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="pass.js"></script>
+</body>
+</html>
