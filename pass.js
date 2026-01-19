@@ -16,7 +16,7 @@ const strengthText = document.getElementById("strengthText");
 const UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const LOWERCASE = "abcdefghijklmnopqrstuvwxyz";
 const NUMBERS = "0123456789";
-const SYMBOLS = "!@#$%^&*()_+[]{}<>?/";
+const SYMBOLS = "!@#$%^&*()_%[]{}<>?/";
 
 // ===== Update Length Display =====
 lengthValue.textContent = lengthSlider.value;
